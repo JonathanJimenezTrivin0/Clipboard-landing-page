@@ -1,0 +1,83 @@
+.footer {
+  padding: 43px 170px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $Grayish-Blue-alfa;
+  &__logo {
+    width: 50px;
+    height: 50px;
+    transition: transform 400ms $Cubic;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+  .about {
+    padding-right: 200px;
+    display: flex;
+    gap: 90px;
+
+    &__ul {
+      font-size: 18px;
+      color: $Dark-Grayish-Blue;
+    }
+    &__list {
+      font-size: 15px;
+      margin-bottom: 10px;
+      transition: color 400ms $Cubic;
+      &:hover {
+        color: $Strong-Cyan;
+        cursor: pointer;
+      }
+    }
+  }
+  .socialMedia {
+    display: flex;
+    gap: 20px;
+    &__circle {
+      fill: $White;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      width: 23px;
+      height: 23px;
+      border-radius: 10px;
+      background-color: $Dark-Grayish-Blue;
+      border-radius: 10%;
+    }
+    &__svg {
+      transition: fill 400ms $Cubic;
+      &:hover {
+        fill: $Strong-Cyan;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1300px) {
+  .footer {
+    padding: 40px 40px;
+    margin: 0 auto;
+    max-width: 375px;
+    flex-direction: column;
+    .about {
+      padding-top: 45px;
+      padding-bottom: 45px;
+      flex-direction: column;
+      text-align: center;
+      padding-right: 0px;
+      gap: 0;
+    }
+  }
+}

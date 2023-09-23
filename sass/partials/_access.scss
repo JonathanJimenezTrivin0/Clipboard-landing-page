@@ -1,0 +1,32 @@
+.access {
+  padding-top: 157px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  &__title {
+    font-size: 40px;
+    padding-bottom: 30px;
+    color: $Dark-Grayish-Blue;
+  }
+  &__description {
+    width: 680px;
+    font-size: 18px;
+    padding-bottom: 110px;
+    line-height: 1.5em;
+    color: $Grayish-Blue;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .access {
+    &__title {
+      font-size: 35px;
+    }
+    &__description {
+      width: auto;
+      font-size: 17px;
+      padding-bottom: 60px;
+    }
+  }
+}
